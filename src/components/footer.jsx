@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { logo } from "../assets/icons"
 import { footer, socialMedia } from "../constants"
 import { styles } from "../utils/style"
@@ -19,7 +20,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2">
                   {item.links.map((link) => (
                     <li className="font-montserrat hover:underline text-white cursor-pointer" key={link.name}>
-                      <a href={link.link}>{link.name}</a>
+                      <Link to={link.link}>{link.name}</Link>
                     </li>
                   ))}
                 </ul>

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.gradient {
+  background: rgb(94, 57, 40);
+  background: linear-gradient(
+    104deg,
+    rgba(94, 57, 40, 1) 0%,
+    rgba(171, 117, 81, 1) 100%
+  );
+}
+
+.home {
+  background-image: url("./assets/images/BG.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.sale {
+  background-image: url("./assets/images/rectangle.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-gradient {
+  background: rgb(154, 121, 87);
+  background: linear-gradient(
+    90deg,
+    rgba(154, 121, 87, 1) 0%,
+    rgba(38, 74, 61, 1) 100%
+  );
+}

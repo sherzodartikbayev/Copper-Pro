@@ -161,7 +161,7 @@ export const footer = [
     links: [
       { name: "Каталог", link: "/catalog" },
       { name: "Новости", link: "/news" },
-      { name: "Доставка", link: "/delivery" },
+      { name: "Доставка", link: "/" },
       { name: "О нас", link: "/about" },
       { name: "Контакты", link: "/" },
     ],

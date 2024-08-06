@@ -192,9 +192,9 @@ export const footer = [
 ]
 
 export const socialMedia = [
-  { src: facebook, alt: "facebook logo" },
-  { src: twitter, alt: "twitter logo" },
-  { src: instagram, alt: "instagram logo" },
+  { id: 1, src: facebook, alt: "facebook logo" },
+  { id: 2, src: twitter, alt: "twitter logo" },
+  { id: 3, src: instagram, alt: "instagram logo" },
 ];
 
 export const catalogHeroImg = [

@@ -6,9 +6,9 @@ const News = () => {
   return (
     <>
 
-      <section className={`${styles.padding} flex flex-col justify-center w-full mb-20`}>
+      <section className={`${styles.padding} flex flex-col justify-center w-full mb-20 relative top-10`}>
         {/* title  */}
-        <h1 className="font-lora text-5xl max-md:text-6xl max-ss:text-2xl text-black leading-normal mt-20 mb-5">Каталог</h1>
+        <h1 className="font-lora text-5xl max-md:text-6xl max-ss:text-2xl text-black leading-normal mt-20 mb-5">Новости</h1>
 
         {/* cards  */}
         <div className={`${styles.flexCenter}`}>

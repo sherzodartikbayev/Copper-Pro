@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-3 max-ss:grid-cols-2 flex-wrap">
             {footer.map((item) => (
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5" key={item.id}>
                 <h1 className="font-montserrat font-bold text-xl text-white">{item.title}</h1>
                 <ul className="flex flex-col gap-2">
                   {item.links.map((link) => (
@@ -30,7 +30,7 @@ const Footer = () => {
 
         <div className="flex gap-5 items-center justify-end">
           {socialMedia.map((icon) => (
-            <div className="flex justify-center items-center w-[30px] h-[30px] rounded-full cursor-pointer">
+            <div className="flex justify-center items-center w-[30px] h-[30px] rounded-full cursor-pointer" key={icon.id}>
               <img src={icon.src} alt={icon.alt} className="w-full h-full object-contain" />
             </div>
           ))}

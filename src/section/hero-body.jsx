@@ -14,7 +14,7 @@ const HeroBody = () => {
         {/* cards */}
         <div className={`grid grid-cols-3 max-md:grid-cols-2 max-ss:grid-cols-1 gap-10 flex-wrap m-auto mt-5`}>
           {HeroBodyCard.map((item) => (
-            <div className="w-[300px] h-[300px] relative">
+            <div className="w-[300px] h-[300px] relative" key={item.id}>
               <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
             </div>
           ))}

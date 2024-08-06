@@ -2,6 +2,7 @@ import { useState } from "react"
 import { close, logo, menu } from "../assets/icons"
 import { navLinks, navLinks_btns } from "../constants/index"
 import { styles } from "../utils/style"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [toggleNav, setToggleNav] = useState(false)
@@ -9,18 +10,18 @@ const Navbar = () => {
   const toggleHandler = () => setToggleNav((prev) => !prev);
 
   return (
-    <header className={`${styles.paddingX} ${styles.flexBetween} h-24 w-full mx-auto z-10 fixed bg-gradient`}>
+    <header className={`${styles.paddingX} ${styles.flexBetween} ${window.scrollY > 0 ? "bg-gradient" : ""} h-24 w-full mx-auto z-10 fixed bg-gradient`}>
       {/* Logo  */}
       <div className="">
         <a href="/">
-          <img src={logo} alt="logo" /> 
+          <img src={logo} alt="logo" />
         </a>
       </div>
 
       {/* Navbar Links  */}
       <ul className={`${styles.flexCenter} flex-1 gap-10 max-lg:hidden`}>
-        {navLinks.map((item) => (
-          <li key={item.id} className="text-white hover:text-gradient transition-all duration-500"><a href={item.href}>{item.title}</a></li>
+        {navLinks.map((nav) => (
+          <li key={nav.id} className="text-white hover:text-gradient transition-all duration-500"><Link to={nav.href}>{nav.title}</Link></li>
         ))}
       </ul>
 
@@ -52,7 +53,7 @@ const Navbar = () => {
             <button key={btn.id} className={`${styles.flexCenter} relative top-5 w-[50px] h-[100px] bg-white`}>
               <img src={btn.src} alt={btn.alt} />
             </button>
-          ))} 
+          ))}
         </div>
 
         <ul className={`${styles.flexCenter} flex-col list-none flex-1`}>
@@ -61,8 +62,9 @@ const Navbar = () => {
               key={nav.id}
               className={`text-white text-[2em]
               cursor-pointer transition-all duration-500`}
+              
             >
-              <a href={nav.href}>{nav.title}</a>
+              <Link to={nav.href} onClick={() => setToggleNav(false)}>{nav.title}</Link>
             </li>
           ))}
         </ul>

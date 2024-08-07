@@ -13,9 +13,9 @@ const Navbar = () => {
     <header className={`${styles.paddingX} ${styles.flexBetween} ${window.scrollY > 0 ? "bg-gradient" : ""} h-24 w-full mx-auto z-10 fixed bg-gradient`}>
       {/* Logo  */}
       <div className="">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
       </div>
 
       {/* Navbar Links  */}

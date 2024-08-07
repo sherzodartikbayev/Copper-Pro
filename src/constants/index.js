@@ -192,9 +192,9 @@ export const footer = [
 ]
 
 export const socialMedia = [
-  { id: 1, href: "facebook.com", src: facebook, alt: "facebook logo" },
-  { id: 2, href: "x.com", src: twitter, alt: "twitter logo" },
-  { id: 3, href: "instagram.com", src: instagram, alt: "instagram logo" },
+  { id: 1, href: "https://www.facebook.com", src: facebook, alt: "facebook logo" },
+  { id: 2, href: "https://www.x.com", src: twitter, alt: "twitter logo" },
+  { id: 3, href: "https://www.instagram.com", src: instagram, alt: "instagram logo" },
 ];
 
 export const catalogHeroImg = [

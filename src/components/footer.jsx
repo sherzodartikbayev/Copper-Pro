@@ -32,9 +32,9 @@ const Footer = () => {
         <div className="flex gap-5 items-center justify-end">
           {socialMedia.map((icon) => (
             <div className="flex justify-center items-center w-[30px] h-[30px] rounded-full cursor-pointer" key={icon.id}>
-              <Link to={icon.href}>
+              <a href={icon.href}>
                 <img src={icon.src} alt={icon.alt} className="w-full h-full object-contain" />
-              </Link>
+              </a>
             </div>
           ))}
         </div>

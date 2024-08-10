@@ -19,7 +19,6 @@ const Catalog = () => {
             ))}
           </div>
         </div>
-
       </section>
     </>
   )

@@ -40,22 +40,3 @@
     rgba(38, 74, 61, 1) 100%
   );
 }
-
-.breadcrumbs > * {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.breadcrumbs .crumb:after {
-  content: ">";
-  margin-left: 10px;
-}
-
-.breadcrumbs .crumb:last-child:after {
-  display: none;
-}
-
-.breadcrumbs .crumb a {
-  color: #aaa;
-  text-decoration: none;
-}

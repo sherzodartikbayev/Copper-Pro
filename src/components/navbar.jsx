@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className={`${styles.paddingX} ${styles.flexBetween} ${window.scrollY > 0 ? "bg-gradient" : ""} h-24 w-full mx-auto z-10 fixed bg-gradient`}>
       {/* Logo  */}
       <div className="">
-        <Link to="/">
+        <Link to="/" onClick={() => setToggleNav(false)}>
           <img src={logo} alt="logo" />
         </Link>
       </div>

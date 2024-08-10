@@ -12,7 +12,7 @@ const Catalog = () => {
         <div className={`${styles.flexCenter}`}>
           <div className={`grid grid-cols-4 max-md:grid-cols-2 max-ss:grid-cols-1 gap-5 mb-32`}>
             {catalogHeroImg.map((item) => (
-              <div className={`${styles.flexCenter} w-[330px] h-[160px]`}>
+              <div className={`${styles.flexCenter} w-[330px] h-[160px]`} key={item.id}>
                 <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
                 <h1></h1>
               </div>

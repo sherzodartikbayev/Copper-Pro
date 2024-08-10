@@ -163,12 +163,12 @@ const HeroBody = () => {
 
       <section className={`${styles.padding} ${styles.flexCenter} flex-col w-full sale`}>
         {/* title  */}
-        <h1 className="font-lora text-5xl max-md:text-4xl max-ss:text-2xl text-black text-center mt-5 mb-15 lg:mb-10 xs:mb-5">Почему выбирают нас</h1>
+        <h1 className="font-lora text-5xl max-md:text-4xl max-ss:text-2xl text-black text-center mt-5 mb-12 lg:mb-10 xs:mb-6">Почему выбирают нас</h1>
 
-        <div className={`grid grid-cols-4 max-md:grid-cols-2  gap-10 mx-auto max-w-[1920px]`}>
+        <div className={`grid grid-cols-4 max-md:grid-cols-2 gap-10 mx-auto max-w-[1920px]`}>
           {HeroBodyEndCard.map((item) => (
             <div className="flex flex-col gap-5" key={item.id}>
-              <div className={`${styles.flexCenter} bg-gradient w-[76px] h-[76px]`}>
+              <div className={`${styles.flexCenter} bg-gradient w-[76px] h-[76px] cursor-pointer`}>
                 <img src={item.icon} alt={item.alt} className="object-contain" />
               </div>
 

@@ -4,7 +4,7 @@ import { styles } from "../utils/style"
 const About = () => {
   return (
     <>
-      <section className={`${styles.padding} ${styles.flexBetween} max-md:justify-center flex-wrap justify-center w-full h-[100vh] max-ss:h-auto relative top-10`}>
+      <section className={`${styles.padding} ${styles.flexBetween} max-md:justify-center flex-wrap justify-center w-full h-[100vh] max-md:h-auto max-ss:h-auto relative top-10`}>
         <div className="flex flex-col gap-10 max-ss:mb-20">
           <h1 className="font-lora text-8xl max-md:text-4xl max-ss:text-2xl text-black mt-20">О нас</h1>
           

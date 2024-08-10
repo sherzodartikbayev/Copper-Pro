@@ -18,7 +18,7 @@ const BreadCrumbs = () => {
   console.log(currentLink);
 
   return (
-    <div className={`${styles.paddingX} relative top-32 text-xl font-montserrat font-bold capitalize cursor-pointer`}><Link to="">home</Link>/{crumbs}</div>
+    <div className={`${styles.paddingX} flex gap-2 relative top-32 text-xl font-montserrat font-bold capitalize cursor-pointer`}><Link to="">home</Link>/{crumbs}</div>
   )
 }
 

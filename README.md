@@ -47,3 +47,4 @@ If you have any questions or suggestions, feel free to reach out:
 - GitHub: [sherzodartikbayev](https://github.com/sherzodartikbayev)
 - Email: sherzadartikbayev@gmail.com
 - Telegram: [sherzod_artikbayev](https://t.me/sherzod_artikbayev)
+- LinkedIn: [Sherzod Artikbayev](https://www.linkedin.com/in/sherzod3105/)

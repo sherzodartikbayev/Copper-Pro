@@ -32,14 +32,14 @@ cd copper-pro
 npm install  
 ```
 
-# 📸 Screenshots
-![copper-pro-1](https://github.com/user-attachments/assets/fc0de393-0b8e-420a-a293-0e0504254316)
-
-
 ```bash
 # Start the development server
 npm run dev  
 ```
+
+# 📸 Screenshots
+![copper-pro-1](https://github.com/user-attachments/assets/fc0de393-0b8e-420a-a293-0e0504254316)
+
 
 # 📬 Contact
 If you have any questions or suggestions, feel free to reach out:
